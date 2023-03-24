@@ -1,0 +1,33 @@
+{
+    "cSpell.ignoreWords": [
+        "Cmid",
+        "Dilda",
+        "Rohit",
+        "Shlok",
+        "Sudoko",
+        "Vikas",
+        "newxor",
+        "wxyz",
+        "xorsum"
+    ],
+    "cSpell.words": [
+        "pqrs"
+    ],
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "cmath": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "ostream": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "array": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}

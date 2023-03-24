@@ -1,0 +1,7 @@
+Why is the amortized insertion runtime O 1?
+We say that the insertion operation has O(1) 
+amortized run time because the time required to 
+insert an element is O(1) on average, even though 
+some elements trigger a lengthy rehashing of all the 
+elements of the hash table. It is crucial that the array 
+size grow geometrically (doubling).
