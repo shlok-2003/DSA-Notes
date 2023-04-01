@@ -7,10 +7,9 @@ void dfs(int node, vector<int> adj[], int vis[], stack<int>& s) {
     vis[node] = 1;
     
     for(auto x : adj[node])
-    {
         if(!vis[x])
             dfs(x, adj, vis, s);
-    }
+            
     s.push(node);
 }
 
@@ -48,6 +47,7 @@ int main() {
         cin >> u >> v;
 
         //! Topological sort only works for directed acyclic graph
+        adj[u].push_back(v);
     }
 
     vector<int> ans = topologicalSort(node, adj);
