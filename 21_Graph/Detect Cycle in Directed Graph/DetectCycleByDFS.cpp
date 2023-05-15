@@ -15,6 +15,7 @@ bool detect(int node, vector<int> adj[], int vis[], int pathVis[]) {
             return true;
     }
 
+    pathVis[node] = 0;
     return false;
 }
 
