@@ -1,0 +1,7 @@
+Following are the steps to write recurrence relation for a problem. Helps in solving the problem using 
+recursion and dynamic programming.
+
+1) Try to represent the problem in terms of index.
+2) Do all possible stuffs on the index, according to the mentioned problem.
+   For example, in finding sum of all stuffs, then count the ways.
+   For example, in finding maximum of all stuffs, then find the maximum. 

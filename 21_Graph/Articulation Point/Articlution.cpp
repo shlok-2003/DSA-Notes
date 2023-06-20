@@ -28,7 +28,10 @@ void tarjans(int node, int parent, vector<int> adj[], vector<int> &vis, vector<i
             child++;
         }
         else
-        {
+        {   
+            //! If it is visited, we dont need the low value as, it signifies what vertex the adjNode (it) can 
+            //! reach, and we dont need that, as it we not be able to reach the parent node diagrammaticality if, 
+            //! we remove the node.
             low[node] = min(low[node], tin[it]);
         }
     }

@@ -1,0 +1,9 @@
+Memoization: In Memoization, we tend to store the values of sub-problems in some map/tables.
+
+Recursion is top-down approach and Dynamic Programming is bottom-up approach.
+
+Tabulation: In Tabulation, we store the value of the previous sub-problems in a bottom-up manner and solve the problem iteratively.
+            This means that we start from smaller problems and then with that we solve the bigger problem.
+            For example, in Fibonacci numbers we first calculate fib(n) => fib(n-1) & fib(n-2) => fib((n-1) - 1) & fib((n-2) - 2) and so on.
+            But in Tabulation, we initialize dp[0] = 0, dp[1] = 1, then with that, we run a loop and compute the Fibonacci numbers iteratively.
+            Thus, we build the solution of the bigger problems from the smaller ones.
