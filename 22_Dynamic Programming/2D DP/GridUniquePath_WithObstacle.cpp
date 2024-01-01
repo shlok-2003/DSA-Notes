@@ -54,10 +54,12 @@ int countPath1(int row, int col, vector<vector<int>> &grid, vector<vector<int>> 
     if(row < 0 || col < 0)      return 0;
     if(grid[row][col] == 0)     return 0;
 
+    if(dp[row][col] != -1)      return dp[row][col];
+
     int left = countPath1(row, col-1, grid, dp, n);
     int right = countPath1(row-1, col, grid, dp, n);
 
-    return left + right;
+    return dp[row][col] = left + right;
 }
 
 int main() {
