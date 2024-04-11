@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
 using namespace std;
 
 int subsetSum3(vector<int> &arr, int k, int n) {                                       //! Method 3
@@ -46,18 +49,18 @@ int subsetSum2(vector<int> &arr, int k, int n) {              //! Method 2
     return dp[n-1][k];
 }
 
-    int subsetSum1(int idx, int target, vector<int> &arr, vector<vector<int>> &dp) {            //! Method 1
-        if(target == 0) return 1;
-        if(idx == 0)    return arr[0] == target;
+int subsetSum1(int idx, int target, vector<int> &arr, vector<vector<int>> &dp) {            //! Method 1
+    if(target == 0) return 1;
+    if(idx == 0)    return arr[0] == target;
 
-        if(dp[idx][target] != -1)   return dp[idx][target];
+    if(dp[idx][target] != -1)   return dp[idx][target];
 
-        int not_take = subsetSum1(idx-1, target, arr, dp);
-        int take = 0;
-        if(target >= arr[idx])  take = subsetSum1(idx-1, target-arr[idx], arr, dp);
+    int not_take = subsetSum1(idx-1, target, arr, dp);
+    int take = 0;
+    if(target >= arr[idx])  take = subsetSum1(idx-1, target-arr[idx], arr, dp);
 
-        return dp[idx][target] = not_take | take;
-    }
+    return dp[idx][target] = not_take | take;
+}
 
 int main() {
     int n;

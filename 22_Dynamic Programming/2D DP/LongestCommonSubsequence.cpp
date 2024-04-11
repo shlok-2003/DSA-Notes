@@ -62,7 +62,7 @@ int tabulation(int n, int m, string &s, string &t, vector<vector<int>> &dp) {   
     return dp[n][m];
 }
 
-int memoization(int idx1, int idx2, string &s1, string &s2, vector<vector<int>> &dp) {
+int memoization(int idx1, int idx2, string &s1, string &s2, vector<vector<int>> &dp) {                  //! Method 1
     if(idx1 == 0 || idx2 == 0)
     {
         return 0;
