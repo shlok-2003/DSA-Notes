@@ -17,15 +17,15 @@ class Hero{
             name = new char[100];
         }
 
-        char setName(char *name) {
+        void setName(char *name) {
             strcpy( this -> name, name);
         }
 
-        char setLevel(char level) {
+        void setLevel(char level) {
             this -> level = level;
         }
 
-        int setHealth(int health) {
+        void setHealth(int health) {
             this -> health = health;
         }
 
@@ -63,15 +63,15 @@ class Vehicle{
             this -> level = temp.level;
         }
 
-        string setName(char *name) {
+        void setName(char *name) {
             strcpy( this -> name, name);
         }
 
-        char setLevel(char level) {
+        void setLevel(char level) {
             this -> level = level;
         }
 
-        int setHealth(int health) {
+        void setHealth(int health) {
             this -> health = health;
         }
 
